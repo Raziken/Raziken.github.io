@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <title>Rooms</title>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="navbar">
+        <div class="logo-container">
+            <img src="appLogo2.png" alt="UPang Logo" class="logo">
+            <h1 class="roomsearchTxt">UPang Room Search</h1>
+        </div>
+
+        <a href="home.html" class="nav-item">
+            <img src="dashboardIcon.png" alt="Dashboard Icon"> Dashboard
+        </a>
+        
+        <a href="rooms.html" class="mainpage">
+            <img src="roomsIcon.png" alt="Rooms Icon"> Rooms
+        </a>
+        
+        <a href="students.html" class="nav-item">
+            <img src="studentIcon.png" alt="Students Icon"> Students
+        </a>
+
+        <a href="roomrequest.html" class="nav-item">
+            <img src="requestIcon.png" alt="Room Request Icon"> Room Request
+        </a>
+
+        <a href="roomschedule.html" class="nav-item">
+            <img src="roomscheduleIcon.png" alt="Room Schedules Icon"> Room Schedules
+        </a>
+
+        <a href="#" class="logoutBtn">
+            <img src="logoutIcon.png" alt="Logout Icon"> Logout
+        </a>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <div class="top-container">
+        <h1 style="margin-left: 15px;">Rooms</h1>
+        <div class="profile-container">
+            <img src="profile.png" alt="Profile Picture" class="profile-img">
+            <div class="profile-texts">
+                <h3>John Doe</h3>
+                <p>Admin</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="room-details">
+            <h2>Room Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Room Number</th>
+                        <th>Schedule</th>
+                        <th>Room Equipments</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="status available">Available</span></td>
+                        <td>PTC 304</td>
+                        <td>10:30am - 12:00pm</td>
+                        <td>Monitor, TV, Outlets, Whiteboard, Air Conditioner</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">✖</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="status occupied">Occupied</span></td>
+                        <td>PTC 403</td>
+                        <td>9:00am - 10:30am</td>
+                        <td>Monitor, TV, Outlets</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">✖</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="status maintenance">Maintenance</span></td>
+                        <td>ITS 201</td>
+                        <td>1:30pm - 3:00pm</td>
+                        <td>Monitor, TV, Outlets</td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">✖</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <span>&lt;</span>
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>&gt;</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Add Button -->
+    <div class="floating-btn">+</div>
+
+</body>
+</html>

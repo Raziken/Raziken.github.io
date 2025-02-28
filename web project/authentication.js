@@ -33,7 +33,7 @@ function validateLogin(event) {
         successModal.style.display = "block";
 
         setTimeout(function () {
-            window.location.href = "homepage.html"; 
+            window.location.href = "rooms.html"; 
         }, 2000); 
     } else {
         errorMessage.textContent = "Invalid username or password. Please try again.";
